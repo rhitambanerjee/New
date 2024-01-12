@@ -1,11 +1,12 @@
-version: '3.1'
-services: 
-  web:
-    build: .
-    volumes:
-      - .:/app
+version: '3'
+services:
+  frntend:
+    image: customerfrntend 
+    build:
+      context: .
+      dockerfile: Dockerfile
     ports:
       - "3000:3000"
-    image: web:customer
-    container_name: frontendcustmer
-    command: npm start
+    environment:
+      - NODE_ENV=production
+    restart: unless-stopped
