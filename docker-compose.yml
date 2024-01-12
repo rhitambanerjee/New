@@ -1,0 +1,12 @@
+version: '3.1'
+services: 
+  web :
+  volumes:
+    - .:/app
+  ports:
+    - "3000:3000"
+  image: node:frontendcustmer
+  container_name: frontendcustmer
+  command: npm start
+
+
