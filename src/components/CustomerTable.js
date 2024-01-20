@@ -43,7 +43,7 @@ const CustomerTable = () => {
               <TableCell>{row.address}</TableCell>
               <TableCell>{row.phone}</TableCell>
               <TableCell>{row.dateadded}</TableCell>
-              <TableCell>{row.daetofbirth}</TableCell>
+              <TableCell>{row.dateofbirth}</TableCell>
               <TableCell>{row.khatano}</TableCell>
             </TableRow>
           ))}
